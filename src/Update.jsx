@@ -52,8 +52,8 @@ function Update() {
             <span>New name:</span>
             <input
               onChange={(e) => setName(e.target.value)}
-              value={name}
-              type="text"
+              value={name} required 
+              type="text" 
               placeholder="Usmonov Maqsadbek"
               className="input input-bordered input-primary w-96"
             />
@@ -63,7 +63,7 @@ function Update() {
             <span>New image URL:</span>
             <input
               onChange={(e) => setImage(e.target.value)}
-              value={image}
+              value={image} required 
               type="url"
               placeholder="Enter image URL"
               className="input input-bordered input-primary w-96"
@@ -74,7 +74,7 @@ function Update() {
             <span>New email:</span>
             <input
               onChange={(e) => setEmail(e.target.value)}
-              value={email}
+              value={email} required 
               type="email"
               placeholder="maqsadbekusmonov8@gmail.com"
               className="input input-bordered input-primary w-96"
@@ -85,7 +85,7 @@ function Update() {
             <span>New phone number:</span>
             <input
               onChange={(e) => setPhoneNumber(e.target.value)}
-              value={phoneNumber}
+              value={phoneNumber} required 
               type="text"
               placeholder="+998 97 501 95 53"
               className="input input-bordered input-primary w-96"
@@ -96,7 +96,7 @@ function Update() {
             <span>New job:</span>
             <input
               onChange={(e) => setJob(e.target.value)}
-              value={job}
+              value={job} required 
               type="text"
               placeholder="Frond-end developer"
               className="input input-bordered input-primary w-96"
@@ -107,7 +107,7 @@ function Update() {
             <span>New location:</span>
             <input
               onChange={(e) => setLocation(e.target.value)}
-              value={location}
+              value={location} required 
               type="text"
               placeholder="Uzbekistan, Fergana"
               className="input input-bordered input-primary w-96"
