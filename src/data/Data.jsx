@@ -11,16 +11,6 @@ export const UserList = [
     id: 1,
   },
   {
-    name: "Marion Fleming",
-    email: "marion4933885@gmail.com",
-    phoneNumber: "+1 984 238 3453",
-    image: "https://randomuser.me/api/portraits/women/77.jpg",
-    job: "Back-end developer",
-    gender: "Woman",
-    location: "USA",
-    id: 2,
-  },
-  {
     name: "Shelly King",
     email: "shellyking9488@gmail.com",
     phoneNumber: "+998974519053",
@@ -28,7 +18,7 @@ export const UserList = [
     job: "C++ developer",
     gender: "Woman",
     image: "https://randomuser.me/api/portraits/women/79.jpg",
-    id: 3,
+    id: 2,
   },
   {
     name: "Dave Gardner",
@@ -38,6 +28,6 @@ export const UserList = [
     job: "Teacher",
     gender: "Man",
     location: "United States, New york",
-    id: 4,
+    id: 3,
   },
 ];

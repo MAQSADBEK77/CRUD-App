@@ -1,6 +1,7 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { updateUser } from "./UserReducer";
+import { toast } from "react-toastify";
 import { useState } from "react";
 function Update() {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ function Update() {
         gender,
       })
     );
+    toast.success("Success edit User");
     navigate("/");
   }
   return (

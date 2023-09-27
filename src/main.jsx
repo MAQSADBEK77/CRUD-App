@@ -10,8 +10,11 @@ const store = configureStore({
     user: UserReducer,
   },
 });
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
+    <ToastContainer position="top-right" />
     <App />
   </Provider>
 );

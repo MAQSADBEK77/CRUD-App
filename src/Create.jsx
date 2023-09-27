@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "./UserReducer";
+import {toast} from 'react-toastify'
 function Create() {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.user);
@@ -28,6 +29,7 @@ function Create() {
         gender,
       })
     );
+    toast.success('Create New user')
     navigate("/");
   }
   return (
